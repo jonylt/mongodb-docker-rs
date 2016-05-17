@@ -9,7 +9,11 @@ docker compose yml to setup a mongodb replicaset
 #### Use ####
 * Update "volumes" with your local db data directories
 * Run docker-compose up
-* Connect to mongo primary instance (probably will be mongo1): mongo mongo1:27017
-* rs.initiate()
-* rs.add("mongo2:27017")
-* rs.add("mongo3:27017")
+* Connect to mongo primary instance (probably will be mongo1) 
+```
+mongo mongo1:27017
+
+> rs.initiate()
+> rs.add("mongo2:27017")
+> rs.add("mongo3:27017")
+```
